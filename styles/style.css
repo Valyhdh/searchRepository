@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../assets/fonts/IBMPlexSans_Condensed-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../assets/fonts/IBMPlexSans_Condensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.wrapper .search-title {
+  font-family: "IBMPlexSans";
+  font-weight: 500;
+}
+
+.wrapper .search .repo-input {
+  width: 280px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid #3d3d3d;
+  transition: all 0.4s;
+
+}
+
+.wrapper .search .repo-input:focus {
+  background-color: rgba(202, 202, 202, 0.3882352941);
+  outline: 1px solid #bbbbbb;
+}
+
+.wrapper .search .repo-input:focus::placeholder {
+  color: #8b8b8b;
+  opacity: 0.7;
+}
+
+.wrapper .search .repo-input:hover {
+  border: 1px solid #525253;
+}
+
+.wrapper .search .repo-input::placeholder {
+  font-family: "IBMPlexSans";
+  font-weight: 300;
+  color: #242424;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.wrapper .search .autocomplete {
+  display: flex;
+  flex-direction: column;
+  font-family: "IBMPlexSans";
+  font-weight: 400;
+  font-size: 10px;
+  box-sizing: border-box;
+  max-height: 105px;
+  overflow: hidden;
+
+
+}
+
+.wrapper .search .autocomplete__item {
+  padding: 4px 0px;
+  margin: auto 5px;
+}
+
+.wrapper .search .autocomplete__item:hover {
+  background-color: rgba(156, 156, 156, 0.5215686275);
+}
+
+.repo-list {
+  margin-top: 50px;
+}
+
+.repo-list__item {
+  border: 1px solid #525253;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 80px;
+}
+
+.repo-list__title {
+  padding: 5px;
+  font-family: "IBMPlexSans";
+  font-size: 12px;
+}
+
+.delete-repo {
+  position: relative;
+  left: 170px;
+  bottom: 50px;
+  background-image: url(../assets/img/delete.svg);
+  padding: 10px;
+  border: none;
+}

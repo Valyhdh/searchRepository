@@ -92,7 +92,7 @@
   border: 1px solid #525253;
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 200px;
+  width: 250px;
   height: 80px;
 }
 
@@ -104,7 +104,7 @@
 
 .delete-repo {
   position: relative;
-  left: 170px;
+  left: 210px;
   bottom: 50px;
   background-image: url(../assets/img/delete.svg);
   padding: 10px;
